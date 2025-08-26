@@ -3,7 +3,7 @@ name: Scrapy Crawl
 on:
   schedule:
     - cron: "0 * * * *"   # Hourly run
-  workflow_dispatch:      # Manuel trigger
+  workflow_dispatch:
 
 jobs:
   crawl:
@@ -16,14 +16,22 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install scrapy
 
-      - name: Run spider (generate kaldata.db)
+      - name: Check database status
+        run: |
+          if [ -f kaldata.db ]; then
+            echo "✅ Database already exists, will update it."
+          else
+            echo "🆕 Database not found, will create new one."
+          fi
+
+      - name: Run spider (generate/update kaldata.db)
         run: |
           scrapy crawl kaldata_spider
 
@@ -31,6 +39,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add kaldata.db
-          git commit -m "Update kaldata.db" || echo "No changes to commit"
+          git add -A
+          git commit -m "Update kaldata.db [skip ci]" || echo "No changes to commit"
           git push
