@@ -15,7 +15,7 @@ Database updates are version-controlled via Git commits<br />
 │<br />
 ├── **.github/workflows/**             # GitHub Actions workflows<br />
 │ &nbsp; &nbsp;  └── **scrapy-crawl.yml**<br />
-├── **kaldata/**                      # Scrapy project package<br />
+├── **kaldata**/                      # Scrapy project package<br />
 │  &nbsp; &nbsp; ├── **content-schema.json**        # Item definitions<br />
 │  &nbsp; &nbsp; ├── **content.json**               # Item definitions<br />
 │  &nbsp; &nbsp;  ├── **items.py**                   # Item definitions<br />
