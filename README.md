@@ -11,7 +11,7 @@ Automated crawling with GitHub Actions (runs every hour)<br />
 Database updates are version-controlled via Git commits<br />
 <br />
 Project Structure 📂<br />
-**kaldata-scraper
+kaldata-scraper<br />
 │<br />
 ├── .github/workflows/             # GitHub Actions workflows<br />
 │ &nbsp; &nbsp;  └── scrapy-crawl.yml<br />
