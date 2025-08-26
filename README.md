@@ -29,14 +29,14 @@ Database updates are version-controlled via Git commits<br />
 │<br />
 ├── **flowchart_kaldata_spider.jpg**   # Workflow<br />
 ├── **scrapy.cfg**                     # Scrapy configuration file<br />
-├── requirements.txt               # Requirements<br />
+├── **requirements.txt**               # Requirements<br />
 └── **README.md**<br />
 <br />
 
-# Local Setup ⚙️ <br />
+Local Setup ⚙️ <br />
 <br />
 Clone the repository:<br />
-git clone https://github.com/<your-username>/kaldata-scraper.git<br />
+git clone https://github.com/<your-user_name>/kaldata-scraper.git<br />
 cd kaldata-scraper<br />
 Install dependencies:<br />
 pip install scrapy<br />
@@ -65,7 +65,7 @@ title	text	Article title<br />
 pubdate	text	Publication datetime<br />
 author	text	Article author<br />
 body	text	Article content<br />
-# Contributing🔧<br />
+# Contributing🔧 <br />
 <br />
 Issues and pull requests are welcome.<br />
 Future improvements could include exporting to JSON/CSV or adding more categories.<br />
