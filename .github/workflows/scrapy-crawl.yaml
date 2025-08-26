@@ -40,5 +40,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git commit -m "Update kaldata.db [skip ci]" || echo "No changes to commit"
+          git commit -m "Update kaldata.db" || echo "No changes to commit"
           git push
