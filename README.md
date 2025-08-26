@@ -13,24 +13,24 @@ Database updates are version-controlled via Git commits<br />
 # Project Structure📂<br />
 **kaldata-scraper**/<br />
 │<br />
-├── **.github/workflows/**             # GitHub Actions workflows
-│ &nbsp; &nbsp;  └── **scrapy-crawl.yml**
+├── **.github/workflows/**             # GitHub Actions workflows<br />
+│ &nbsp; &nbsp;  └── **scrapy-crawl.yml**<br />
 ├── **kaldata/**                      # Scrapy project package<br />
 │  &nbsp; &nbsp; ├── **content-schema.json**        # Item definitions<br />
 │  &nbsp; &nbsp; ├── **content.json**               # Item definitions<br />
 │  &nbsp; &nbsp;  ├── **items.py**                   # Item definitions<br />
-│  &nbsp; &nbsp;  ├── **kaldata.db**                 # SQLite database (auto-created/updated)
+│  &nbsp; &nbsp;  ├── **kaldata.db**                 # SQLite database (auto-created/updated)<br />
 │  &nbsp; &nbsp;  ├── **main.py**                    # <br />
 │  &nbsp; &nbsp;  ├── **middlewares.py**             # <br />
 │  &nbsp; &nbsp;  ├── **pipelines.py**               # SQLite pipeline<br />
 │  &nbsp; &nbsp;  ├── **settings.py**                # Scrapy settings<br />
-│  &nbsp; &nbsp;  └── **spiders/**
-│  &nbsp; &nbsp; &nbsp; &nbsp;      └── **kaldata_spider.py**      # Main spider
-│
-├── **flowchart_kaldata_spider.jpg**   # Workflow
-├── **scrapy.cfg**                     # Scrapy configuration file
-├── requirements.txt               # Requirements
-└── **README.md**
+│  &nbsp; &nbsp;  └── **spiders/**<br />
+│  &nbsp; &nbsp; &nbsp; &nbsp;      └── **kaldata_spider.py**      # Main spider<br />
+│<br />
+├── **flowchart_kaldata_spider.jpg**   # Workflow<br />
+├── **scrapy.cfg**                     # Scrapy configuration file<br />
+├── requirements.txt               # Requirements<br />
+└── **README.md**<br />
 <br />
 
 # Local Setup⚙️<br />
