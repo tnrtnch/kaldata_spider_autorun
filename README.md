@@ -65,7 +65,8 @@ title	text	Article title<br />
 pubdate	text	Publication datetime<br />
 author	text	Article author<br />
 body	text	Article content<br />
-Contributing🔧 <br />
+
+🔧Contributing <br />
 <br />
 Issues and pull requests are welcome.<br />
 Future improvements could include exporting to JSON/CSV or adding more categories.<br />
