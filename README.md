@@ -1,16 +1,16 @@
-# Kaldata Scraper 🕷️
+🕷️# Kaldata Scraper 
 <br />
 This project is a Scrapy-based web scraping application that extracts news articles from Kaldata.<br />
 The collected data is stored in a SQLite database (kaldata.db) and automatically updated every hour via GitHub Actions.<br />
 <br />
-Features 🚀
+🚀Features 
 <br />
 Extracts article title, publication date, author, and body using Scrapy<br />
 Stores all scraped data into a SQLite database (kaldata.db)<br />
 Automated crawling with GitHub Actions (runs every hour)<br />
 Database updates are version-controlled via Git commits<br />
 <br />
-Project Structure 📂<br />
+📂Project Structure <br />
 kaldata-scraper<br />
 │<br />
 ├── .github/workflows/             # GitHub Actions workflows<br />
@@ -33,7 +33,7 @@ kaldata-scraper<br />
 └── README.md<br />
 <br />
 
-Local Setup ⚙️ <br />
+⚙️Local Setup  <br />
 <br />
 Clone the repository:<br />
 git clone https://github.com/<your-user_name>/kaldata-scraper.git<br />
@@ -44,7 +44,7 @@ Run the spider:<br />
 scrapy crawl kaldata_spider<br />
 After execution, a kaldata.db SQLite database will be created/updated with the scraped articles.<br />
 <br />
-GitHub Actions (Automated Runs) ⏰ <br />
+⏰GitHub Actions (Automated Runs)  <br />
 <br />
 This project includes a workflow at .github/workflows/scrapy-crawl.yml.<br />
 The workflow:<br />
@@ -55,7 +55,7 @@ Updates kaldata.db with new data<br />
 Commits changes back to the repository<br />
 You can view run logs under the Actions tab in the repository.<br />
 <br />
-Database Schema 📝 <br />
+📝Database Schema  <br />
 <br />
 The SQLite database contains a single table: articles<br />
 <br />
