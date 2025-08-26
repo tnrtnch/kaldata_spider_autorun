@@ -16,14 +16,14 @@ kaldata-scraper<br />
 ├── .github/workflows/             # GitHub Actions workflows<br />
 │ &nbsp; &nbsp;  └── scrapy-crawl.yml<br />
 ├── kaldata/                      # Scrapy project package<br />
-│  &nbsp; &nbsp; ├── content-schema.json        # Item definitions<br />
-│  &nbsp; &nbsp; ├── content.json              # Item definitions<br />
+│  &nbsp; &nbsp; ├── content-schema.json        # Validation<br />
+│  &nbsp; &nbsp; ├── content.json               # Validation<br />
 │  &nbsp; &nbsp;  ├── items.py                  # Item definitions<br />
-│  &nbsp; &nbsp;  ├── kaldata.db                 # SQLite database (auto-created/updated)<br />
-│  &nbsp; &nbsp;  ├── main.py                    # <br />
-│  &nbsp; &nbsp;  ├── middlewares.py             # <br />
+│  &nbsp; &nbsp;  ├── kaldata.db                # SQLite database (auto-created/updated)<br />
+│  &nbsp; &nbsp;  ├── main.py                   # Validation<br />
+│  &nbsp; &nbsp;  ├── middlewares.py            # <br />
 │  &nbsp; &nbsp;  ├── pipelines.py              # SQLite pipeline<br />
-│  &nbsp; &nbsp;  ├── settings.py                # Scrapy settings<br />
+│  &nbsp; &nbsp;  ├── settings.py               # Scrapy settings<br />
 │  &nbsp; &nbsp;  └── spiders/<br />
 │  &nbsp; &nbsp; &nbsp; &nbsp;      └── kaldata_spider.py      # Main spider<br />
 │<br />
