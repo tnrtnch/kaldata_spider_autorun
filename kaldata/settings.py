@@ -96,9 +96,7 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 
-ROBOTSTXT_OBEY = False
-
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 4
 
 RANDOMIZE_DOWNLOAD_DELAY = True
 
