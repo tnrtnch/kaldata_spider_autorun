@@ -7,7 +7,7 @@ class KaldataSpiderSpider(scrapy.Spider):
     # allowed_domains = ["www.kaldata.com"]
     # start_urls = ["https://www.kaldata.com"]
 
-    def start_requests(self):
+    async def start(self):
         url = 'https://www.kaldata.com'
         yield scrapy.Request(url, callback=self.parse)
 
