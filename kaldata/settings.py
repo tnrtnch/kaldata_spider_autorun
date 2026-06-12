@@ -96,11 +96,11 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 
-DOWNLOAD_DELAY = 4
+DOWNLOAD_DELAY = 1
 
 RANDOMIZE_DOWNLOAD_DELAY = True
 
-CONCURRENT_REQUESTS = 1
+CONCURRENT_REQUESTS = 8
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
 
