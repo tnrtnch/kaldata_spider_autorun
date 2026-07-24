@@ -22,7 +22,7 @@ class KaldataSpiderSpider(scrapy.Spider):
 
 
     def articles(self, response):
-        links = response.xpath("//div[@class='td_block_inner tdb-block-inner td-fix-index']//h3//a/@href").getall()
+        links = response.xpath("//div[@class='td_block_inner tdb-block-inner td-fix-index']//h2//a/@href").getall()
         for link in links:
             yield response.follow(link, callback=self.content)
 
