@@ -34,6 +34,13 @@ jobs:
             echo "🆕 Database not found, will create new one."
           fi
 
+      - name: Test Kaldata access 
+        run: | 
+          echo "Testing Kaldata from GitHub Actions runner..." 
+          curl -I -L https://www.kaldata.com 
+          echo "HTTP status:" 
+          curl -s -o /dev/null -w "%{http_code}\n" https://www.kaldata.com
+
       - name: Run spider (generate/update kaldata.db)
         run: |
           scrapy crawl kaldata_spider -L DEBUG
